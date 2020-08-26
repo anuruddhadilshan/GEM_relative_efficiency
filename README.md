@@ -19,7 +19,7 @@ Loads the macros when ROOT is started
  ###################################################################################################################################################################
  
  ###"GEM_rel_efficiency.C###
-ROOT macro to make "Relative Efficiency vs High Voltage" plots for UVA-SBS GEM layers with 4 SBS gem modules in a layer. Have to use the "rootlogon.C" file to load.
+ ROOT macro to make "Relative Efficiency vs High Voltage" plots for UVA-SBS GEM layers with 4 SBS gem modules in a layer. Have to use the "rootlogon.C" file to load.
  
 Function calling method-> GEM_rel_efficiency(mod1#, mod2#, mod3#, mod4#, mod1_prodID, mod2_prodID, mod3_prodID, mod4_prodID, GEM_layer#)
 modx#: Goes from 0 to 19 (For 5 layers in the cosmic stand)
