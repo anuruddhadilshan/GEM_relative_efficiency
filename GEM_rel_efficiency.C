@@ -77,14 +77,14 @@ void GEM_rel_efficiency(int mod_0, int mod_1, int mod_2, int mod_3, int prod_id_
     if(i == 0){
       g[i]->Draw("AP");
       g[i]->SetMarkerStyle(8);
-      g[i]->SetMarkerSize(0.8);
+      g[i]->SetMarkerSize(1.5);
       g[i]->SetTitle("GEM Layer#"+layer_num+";Voltage (V);Relative Efficency");
       g[i]->GetXaxis()->SetLimits(3600,4200);          //Can change axis limits as needed
       g[i]->GetYaxis()->SetRangeUser(0,0.4);
     }
     else{
       g[i]->SetMarkerStyle(8);
-      g[i]->SetMarkerSize(0.8);
+      g[i]->SetMarkerSize(1.5);
       //g[i]->SetTitle( "Module_"+ modules[i] +" Relative Efficiency;Voltage (V);Relative Efficency");
       g[i]->SetMarkerColor(i+1);
       g[i]->Draw("same P");
