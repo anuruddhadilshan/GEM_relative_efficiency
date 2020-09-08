@@ -73,7 +73,7 @@ void GEM_rel_efficiency(int mod_0, int mod_1, int mod_2, int mod_3, int prod_id_
   prod_id[0]=to_string(prod_id_0); prod_id[1]=to_string(prod_id_1);  prod_id[2]=to_string(prod_id_2);  prod_id[3]=to_string(prod_id_3);
   
 
-   for(int i = 0; i < 4; i++) {
+   for(int i = 0; i < n_modules; i++) {
     if(i == 0){
       g[i]->Draw("AP");
       g[i]->SetMarkerStyle(8);
@@ -90,7 +90,7 @@ void GEM_rel_efficiency(int mod_0, int mod_1, int mod_2, int mod_3, int prod_id_
       g[i]->Draw("same P");
       
     }
-    leg->AddEntry(g[i],"Module_"+modules[i]+" ; Prod ID: "+prod_id[i]);
+    leg->AddEntry(g[i],"Module_"+to_string(i)+" ; Prod ID: "+prod_id[i]);
    }
    leg->Draw("Same");
 
