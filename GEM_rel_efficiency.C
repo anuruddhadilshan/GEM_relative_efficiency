@@ -90,7 +90,7 @@ void GEM_rel_efficiency(int mod_0, int mod_1, int mod_2, int mod_3, int prod_id_
       g[i]->Draw("same P");
       
     }
-    leg->AddEntry(g[i],"Module_"+to_string(i)+" ; Prod ID: "+prod_id[i]);
+    leg->AddEntry(g[i],"GEM_"+to_string(i)+" ; Prod ID: "+prod_id[i]);
    }
    leg->Draw("Same");
 
