@@ -64,6 +64,7 @@ void GEM_rel_efficiency(int mod_0, int mod_1, int mod_2, int mod_3, int prod_id_
 
   //Making plots and formating
   TCanvas *c1 = new TCanvas();
+  c1->SetGrid();
   TString layer_num = to_string(layer_n);
   TLegend *leg = new TLegend(0.1,0.7,0.3,0.9,"SBS-UVA GEM Layer#"+layer_num);
   leg->SetFillColor(0);
